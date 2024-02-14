@@ -1,12 +1,7 @@
-
 # War Thunder Helper
 
 A small webapp that act like an helper to quickly analyze my opponents aircraft.
 With this tool you can add - remove, create a aircraft list and have instant access to numerous aircraft details, such as (max airspeed, max wing_speed, weapons, turntime and many more);
-
-
-
-
 
 
 ## To do
@@ -40,9 +35,26 @@ We will switch static API to use dynamic ID to retrieve more specific data.
     }
   ]
 }
+```
 
-````
 ## Roles
 
 Benorto : Product Owner, CTO
 DigitalDanteCrypto : Senior Lead Dev
+
+
+### PO's 
+
+- Every week I want something.
+  - Even if it doesn't work.
+  - Even if it's trash.
+  - The visual is **NOT** important.
+    - Use css framework, if not not at all.
+
+- Make shitty drawings of what you want.
+- Take not somewhere.
+
+- Writing tests is a plus.
+- Use git the correct way (release cycle, dev branches, and quality branch).
+
+
