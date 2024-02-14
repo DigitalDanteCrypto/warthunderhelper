@@ -15,6 +15,7 @@ We will switch static API to use dynamic ID to retrieve more specific data.
 3. Create front-end using React, later on can be switched to SVELTE. Because we don't like react here.
 4. Simple UI that display my plane details and my opponent BR most used planes then display their details.
 
+
 ## Data example
 ```
 {
@@ -43,18 +44,33 @@ Benorto : Product Owner, CTO
 DigitalDanteCrypto : Senior Lead Dev
 
 
-### PO's 
+## PO's expectation
 
 - Every week I want something.
   - Even if it doesn't work.
   - Even if it's trash.
   - The visual is **NOT** important.
-    - Use css framework, if not not at all.
+    - Use css framework. If not do not do CSS.
 
 - Make shitty drawings of what you want.
 - Take not somewhere.
 
 - Writing tests is a plus.
-- Use git the correct way (release cycle, dev branches, and quality branch).
+- Use git the correct way (release cycle, dev branches, quality branch and merge request).
+- Don't waste time on thing that are not important.
+- Don't hesitate to ask questions.
 
+
+
+feature branches -> dev -> main (prod)
+feature branches -> 
+feature branches -> 
+feature branches -> 
+
+After two weeks, we release in prod.
+
+
+```
+Analysis -> Design -> Implementation -> Testing
+```
 
