@@ -30,3 +30,9 @@
 
 I want tot challenge the data structure.
 
+
+
+# Meeting 16.02
+
+- Enlever le isLoading dans le PlaneContext.
+- Change Option Planes by DataList.

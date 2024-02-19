@@ -1,7 +1,7 @@
-package dev.warthunderapptool.planes.controller;
+package dev.warthunderapptool.controller;
 
-import dev.warthunderapptool.planes.Plane;
-import dev.warthunderapptool.planes.service.PlaneService;
+import dev.warthunderapptool.models.Plane;
+import dev.warthunderapptool.service.PlaneService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

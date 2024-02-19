@@ -1,6 +1,6 @@
-package dev.warthunderapptool.planes.repository;
+package dev.warthunderapptool.repository;
 
-import dev.warthunderapptool.planes.Plane;
+import dev.warthunderapptool.models.Plane;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.Optional;

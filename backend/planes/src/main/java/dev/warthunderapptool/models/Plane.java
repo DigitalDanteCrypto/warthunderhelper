@@ -1,4 +1,4 @@
-package dev.warthunderapptool.planes;
+package dev.warthunderapptool.models;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

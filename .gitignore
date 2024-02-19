@@ -5,3 +5,8 @@ node_packages/
 target/
 
 package_lock.json
+
+### DEPENDENCIES TO IGNORE ###
+.mvn
+*.jar
+
