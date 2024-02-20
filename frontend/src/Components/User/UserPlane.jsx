@@ -5,18 +5,19 @@ function UserPlane() {
     const {planes, isLoading, error} = usePlanes();
     const [selectedPlane, setSelectedPlane] = useState('');
 
-
+    const { updateUserPlane } = usePlanes(); //*** */
 
     // Function to handle plane selection change inside the select
     const handleChange = (event) => {
         setSelectedPlane(event.target.value);
+        
     };
 
     if (isLoading) return <div>Loading...</div>;
     if (error) return <div>Error: {error}</div>;
-
+    
     const userPlane = planes.find(plane => plane.id === selectedPlane);
-
+    updateUserPlane(userPlane);
     return (
         <div>
             <h2>User Plane</h2>
@@ -32,6 +33,8 @@ function UserPlane() {
                     <p>Battle Rating: {userPlane.battleRating}</p>
                     <p>Country: {userPlane.country}</p>
                     <p>Max Altitude: {userPlane.maxAltitude}</p>
+                    <p>TurnTime Stock: {userPlane.turnTime.stock}</p>
+                    <p>TurnTime Upgraded: {userPlane.turnTime.upgraded}</p>
                     <p>Max Speed: {userPlane.maxSpeed}</p>
                     <p>Features:</p>
                     <ul>

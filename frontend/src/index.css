@@ -13,10 +13,14 @@ body {
   text-align: center;
 }
 
-#ennemies-display {
+#ennemies-container {
   background-color: beige;
-  height: 400px;
+}
+#ennemies-display {
+  
+  height: auto;
   width: 100%;
+  min-height: 400px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
