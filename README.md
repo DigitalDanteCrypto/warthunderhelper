@@ -1,12 +1,7 @@
-
 # War Thunder Helper
 
 A small webapp that act like an helper to quickly analyze my opponents aircraft.
 With this tool you can add - remove, create a aircraft list and have instant access to numerous aircraft details, such as (max airspeed, max wing_speed, weapons, turntime and many more);
-
-
-
-
 
 
 ## To do
@@ -19,6 +14,7 @@ We will switch static API to use dynamic ID to retrieve more specific data.
 
 3. Create front-end using React, later on can be switched to SVELTE. Because we don't like react here.
 4. Simple UI that display my plane details and my opponent BR most used planes then display their details.
+
 
 ## Data example
 ```
@@ -40,9 +36,41 @@ We will switch static API to use dynamic ID to retrieve more specific data.
     }
   ]
 }
+```
 
-````
 ## Roles
 
 Benorto : Product Owner, CTO
 DigitalDanteCrypto : Senior Lead Dev
+
+
+## PO's expectation
+
+- Every week I want something.
+  - Even if it doesn't work.
+  - Even if it's trash.
+  - The visual is **NOT** important.
+    - Use css framework. If not do not do CSS.
+
+- Make shitty drawings of what you want.
+- Take not somewhere.
+
+- Writing tests is a plus.
+- Use git the correct way (release cycle, dev branches, quality branch and merge request).
+- Don't waste time on thing that are not important.
+- Don't hesitate to ask questions.
+
+
+
+feature branches -> dev -> main (prod)
+feature branches -> 
+feature branches -> 
+feature branches -> 
+
+After two weeks, we release in prod.
+
+
+```
+Analysis -> Design -> Implementation -> Testing
+```
+
