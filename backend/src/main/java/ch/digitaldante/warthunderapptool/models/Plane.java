@@ -1,4 +1,4 @@
-package dev.warthunderapptool.models;
+package ch.digitaldante.warthunderapptool.models;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
