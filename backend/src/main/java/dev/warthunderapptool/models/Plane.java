@@ -24,8 +24,34 @@ public class Plane {
     private List<String> features;
     private Limits limits;
     private Map<String, String> armament;
+    private List<String> pros; // New field for pros
+    private List<String> cons; // New field for cons
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -51,3 +77,4 @@ class Flap {
     private int take_off;
     private int landing;
 }
+*/

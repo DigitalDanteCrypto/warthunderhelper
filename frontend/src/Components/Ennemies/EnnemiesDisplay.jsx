@@ -4,7 +4,7 @@ import { usePlanes } from "../../Service/PlaneContext";
 import { userTipsGenerator } from "../../Service/userTipsLogic";
 
 function EnemiesDisplay() {
-  const { userPlane } = usePlanes(); //*** */
+  /*const { userPlane } = usePlanes(); //*** */
   const [maxSpeeds, setMaxSpeeds] = useState(new Array(5).fill(0));
 
   const handleSelectPlane = (newMaxSpeed, index) => {
@@ -21,7 +21,7 @@ function EnemiesDisplay() {
   // Correctly use maxSpeeds to generate the display string
   let displayMaxSpeed = maxSpeeds.join(", ");
   
-  let tip = userTipsGenerator(userPlane.maxSpeed, maxSpeeds);
+ /* let tip = userTipsGenerator(userPlane.maxSpeed, maxSpeeds);*/
 
   return (
     <div id="ennemies-container">
@@ -42,10 +42,11 @@ function EnemiesDisplay() {
           onSelectPlane={(maxSpeed) => handleSelectPlane(maxSpeed, 4)}
         />
       </div>
+      {/* 
       <p>User tips: This is max speed: {displayMaxSpeed}</p>
       {userPlane ? (<p>User max speed: {userPlane.maxSpeed}</p>) : (<p>Not defined yet</p>)}
       {tip ? (<p>User max speed: {tip}</p>): (<p>not defined yet</p>)}
-
+*/}
       
     </div>
   );

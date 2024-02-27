@@ -56,6 +56,22 @@ function UserPlane() {
                     <p>Armament : {Object.entries(userPlane.armament).map(([key, value]) => (
                         <p key={key}>{`${key.charAt(0).toUpperCase() + key.slice(1)}: ${value}`}</p>
                     ))}</p>
+                    <p>Pros --------</p>
+                    <ul>
+                        {userPlane.pros.map((pros, index) => (
+                            <li key={index}>
+                                Pros : {pros}
+                            </li>
+                        ))}
+                    </ul>
+                    <p>Cons --------</p>
+                    <ul>
+                        {userPlane.cons.map((cons, index) => (
+                            <li key={index}>
+                                Cons : {cons}
+                            </li>
+                        ))}
+                    </ul>
                 </>
             ) : <p>Not Selected Yet</p>}
         </div>

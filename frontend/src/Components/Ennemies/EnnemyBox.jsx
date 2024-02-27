@@ -47,7 +47,8 @@ function EnemyBox({ onSelectPlane }) {
           <p>Country: {enemyPlane.country}</p>
           <p>Max Altitude: {enemyPlane.maxAltitude}</p>
           <p>Max Speed: {enemyPlane.maxSpeed}</p>
-          <p>Turn Time: {enemyPlane.turnTime.stock}</p>
+          <p>Turn Time Stock: {enemyPlane.turnTime.stock}</p>
+          <p>Turn Time Upgraded: {enemyPlane.turnTime.upgraded}</p>
         </>
       ) : (
         <p>Not Selected Yet</p>

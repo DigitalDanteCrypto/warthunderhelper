@@ -36,3 +36,9 @@ I want tot challenge the data structure.
 
 - Enlever le isLoading dans le PlaneContext.
 - Change Option Planes by DataList.
+
+
+# Update from 20.02.2024
+
+- Added the basics for a tips logic, used context to feed data to EnnemiesDisplay. 
+- play around with the array and userPlane data in userTipsLogic.js -> then i exported the function to use it inside the component. 
