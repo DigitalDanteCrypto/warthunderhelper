@@ -1,8 +1,7 @@
-package dev.warthunderapptool.controller;
+package ch.digitaldante.warthunderapptool.controller;
 
-import dev.warthunderapptool.models.Plane;
-import dev.warthunderapptool.service.PlaneService;
-import org.springframework.beans.factory.annotation.Autowired;
+import ch.digitaldante.warthunderapptool.models.Plane;
+import ch.digitaldante.warthunderapptool.service.PlaneService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +15,6 @@ public class PlaneController {
 
     private final PlaneService planeService;
 
-    @Autowired
     public PlaneController(PlaneService planeService) {
         this.planeService = planeService;
     }

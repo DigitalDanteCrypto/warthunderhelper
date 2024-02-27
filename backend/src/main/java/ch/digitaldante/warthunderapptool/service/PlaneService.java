@@ -1,8 +1,8 @@
-package dev.warthunderapptool.service;
+package ch.digitaldante.warthunderapptool.service;
 
 
-import dev.warthunderapptool.models.Plane;
-import dev.warthunderapptool.repository.PlaneRepository;
+import ch.digitaldante.warthunderapptool.models.Plane;
+import ch.digitaldante.warthunderapptool.repository.PlaneRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
