@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #263238;
+}
+
+
+#ruban-display {
+  background-color: red;
+  text-align: center;
+}
+
+#ennemies-display {
+  background-color: beige;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#ennemy-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tips-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: yellow;
+}
