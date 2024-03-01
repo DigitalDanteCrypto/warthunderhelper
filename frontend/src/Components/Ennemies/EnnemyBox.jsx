@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { usePlanes } from "../../Service/PlaneContext";
+import { MenuItem } from "@mui/material";
+import Select from '@mui/material/Select';
+
 
 function EnemyBox({ onSelectPlane }) {
   const { planes, isLoading, error } = usePlanes();
@@ -16,7 +19,7 @@ function EnemyBox({ onSelectPlane }) {
     const plane = planes.find((p) => p.id === selectedId);
     if (plane) {
       setEnemyPlane(plane); // Update the state with the found plane
-      onSelectPlane(plane.maxSpeed);
+      onSelectPlane(plane.maxSpeed, plane.turnTime.upgraded, plane.name);
     } else {
       setEnemyPlane(null); // Reset if no plane is found
     }
@@ -29,26 +32,24 @@ function EnemyBox({ onSelectPlane }) {
 
   return (
     <div id="enemy-box">
-      <select onChange={handleChange} value={selectedPlane}>
-        <option value="" disabled>
-          Select a plane
-        </option>
+      
+      <Select  id="demo-simple-select" onChange={handleChange} label="Select Plane" value={selectedPlane}>
         {planes.map((plane) => (
-          <option key={plane.id} value={plane.id}>
+          <MenuItem key={plane.id} value={plane.id}>
             {plane.name}
-          </option>
+          </MenuItem>
         ))}
-      </select>
+      </Select>
 
       {enemyPlane ? (
         <>
-          <p>Name: {enemyPlane.name}</p>
-          <p>Battle Rating: {enemyPlane.battleRating}</p>
-          <p>Country: {enemyPlane.country}</p>
-          <p>Max Altitude: {enemyPlane.maxAltitude}</p>
-          <p>Max Speed: {enemyPlane.maxSpeed}</p>
-          <p>Turn Time Stock: {enemyPlane.turnTime.stock}</p>
-          <p>Turn Time Upgraded: {enemyPlane.turnTime.upgraded}</p>
+          <p><span id="yellow-title">Name: </span>{enemyPlane.name}</p>
+          <p><span id="yellow-title">Battle Rating:</span> {enemyPlane.battleRating}</p>
+          <p><span id="yellow-title">Country:</span> {enemyPlane.country}</p>
+          <p><span id="yellow-title">Max Altitude:</span> {enemyPlane.maxAltitude}</p>
+          <p><span id="yellow-title">Max Speed:</span> {enemyPlane.maxSpeed}</p>
+          <p><span id="orange-title">Turn Time Stock:</span>  {enemyPlane.turnTime.stock}</p>
+          <p><span id="green-title">Turn Time Upgraded:</span> {enemyPlane.turnTime.upgraded}</p>
         </>
       ) : (
         <p>Not Selected Yet</p>

@@ -1,11 +1,21 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
+
 
 export class Ruban extends Component {
   render() {
     return (
-     <div id="ruban-display">
-        <h1>Welcome to the War Thunder Assistant </h1>
-     </div>
+     <nav id="navbar">
+        <div>
+        <a href="#home">War Thunder Assistant</a>
+    </div>
+    <div>
+    
+    <Link to="/">Helper</Link>
+        <Link to="/about">About This Project</Link>
+    </div>
+        
+     </nav>
     )
   }
 }
