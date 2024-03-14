@@ -41,7 +41,7 @@ We will switch static API to use dynamic ID to retrieve more specific data.
 ## Roles
 
 Benorto : Product Owner, CTO
-DigitalDanteCrypto : Senior Lead Dev
+DigitalDanteCrypto : Lead Dev
 
 
 ## PO's expectation
